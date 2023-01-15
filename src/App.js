@@ -107,7 +107,7 @@ class App extends Component {
         .then(response => response.json())
         .then(result => {
           if (result) {
-            fetch('http://localhost:3080/image', {
+            fetch('https://smart-y4j1.onrender.com:3080/image', {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
